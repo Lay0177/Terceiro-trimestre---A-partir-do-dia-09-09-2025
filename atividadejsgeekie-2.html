@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv geekie 2</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            padding: 20px;
+            background-color: pink;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+        <button onclick="clicar()">Clique Aqui</button>
+        <p id="contadorTexto">Você clicou 0 vezes!</p>
+
+    <script>
+
+        let contador = 0;
+        function clicar() {
+            let contador = document.getElementById("contadorTexto");
+            contador++;
+            contador.innerHTML = "Você clicou" + contador + "vezes";
+        }
+
+    </script>
+</body>
+
+</html>
